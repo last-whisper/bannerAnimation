@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+#photo-warpper {
+    display: -webkit-box;
+    width: 75%;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    background: #000000
+}
+
+#control-warpper {
+    display: -webkit-box;
+    width: 25%;
+    -webkit-box-align: start;
+    -webkit-box-orient: vertical;
+    background: -webkit-repeating-linear-gradient(45deg, #313131, #313131 2%, #2b2b2b 2%, #2b2b2b 4%);
+    overflow: hidden;
+    position: relative;
+}
+
+#box {
+    width: 1140px;
+    height: 700px;
+    background: #e3e3e3;
+}
+
+#photo {
+    overflow: hidden;
+    width: 1140px;
+    height: 700px;
+    background-color: #041c54;
+    position: relative;
+}
+
+.pic {
+    width: 80%;
+    margin: 20px auto;
+    height: 200px;
+    background: #000000;
+    cursor: pointer;
+}
+
+#effects {
+
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    margin-right: -25px;
+    overflow-x: hidden;
+
+    height: 100%;
+}
+
+.effect {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.pic {
+    width: 70%;
+    margin: 20px auto;
+    background-size: cover;
+}
+
+#effects .effect:nth-of-type(1) .pic {
+    background-image: url('img/a.jpg');
+}
+
+#effects .effect:nth-of-type(2) .pic {
+    background-image: url('img/b.jpg');
+}
+
+#effects .effect:nth-of-type(3) .pic {
+    background-image: url('img/c.jpg');
+}
+
+#effects .effect:nth-of-type(4) .pic {
+    background-image: url('img/d.jpg');
+}
+
+#effects .effect:nth-of-type(5) .pic {
+    background-image: url('img/shore.jpg');
+}
+
+#effects .scroll-bar {
+    opacity: 0.5;
+    position: absolute;
+    width: 10px;
+    background: #666;
+    border-radius: 5px;
+    right: 0;
+    top: 0;
+}
+
+#effects .scroll-bar:hover {
+    box-shadow: 0px 0 4px #8c8c8c
+}
+
+button {
+    padding: 15px;
+    background: #000;
+    color: #fff;
+    margin: auto;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
